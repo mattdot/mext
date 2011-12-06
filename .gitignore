@@ -34,6 +34,7 @@ httpd.parse.errors
 deploy
 deploy/*
 TestResults/*
+test-results/*
 
 # Exclude ALL DLLs?
 *.dll
@@ -43,3 +44,7 @@ TestResults/*
 *.vs10x
 *.sln.docstates
 *.vsp
+
+.DS_Store
+*.userprefs
+*.pidb

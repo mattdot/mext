@@ -17,7 +17,7 @@ namespace Mext
 		/// <typeparam name='T'>
 		/// The 1st type parameter.
 		/// </typeparam>
-		public static T Value<T>(this XmlNode node, T defaultValue = default(T))
+		public static T SafeValue<T>(this XmlNode node, T defaultValue = default(T))
 		{
 			if (null == node || null == node.Value) {
 				return defaultValue;
@@ -30,7 +30,7 @@ namespace Mext
 			}
 			
 			return (T)Convert.ChangeType (val, typeof(T));
-		} 
+		}
 	}
 }
 
