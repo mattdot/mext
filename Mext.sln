@@ -5,12 +5,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mext", "Mext\Mext.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mext.Tests", "Mext.Tests\Mext.Tests.csproj", "{DB948D56-1BF7-43CB-8A64-AD49B6A82523}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mext.Json", "Mext.Json\Mext.Json.csproj", "{523B6D88-188F-46CC-ABBA-F816D41056F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{523B6D88-188F-46CC-ABBA-F816D41056F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{523B6D88-188F-46CC-ABBA-F816D41056F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{523B6D88-188F-46CC-ABBA-F816D41056F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{523B6D88-188F-46CC-ABBA-F816D41056F5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DB948D56-1BF7-43CB-8A64-AD49B6A82523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DB948D56-1BF7-43CB-8A64-AD49B6A82523}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB948D56-1BF7-43CB-8A64-AD49B6A82523}.Release|Any CPU.ActiveCfg = Release|Any CPU

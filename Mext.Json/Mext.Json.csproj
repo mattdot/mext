@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DB948D56-1BF7-43CB-8A64-AD49B6A82523}</ProjectGuid>
+    <ProjectGuid>{523B6D88-188F-46CC-ABBA-F816D41056F5}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Mext.Tests</RootNamespace>
-    <AssemblyName>Mext.Tests</AssemblyName>
+    <RootNamespace>Mext</RootNamespace>
+    <AssemblyName>Mext.Json</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,22 +30,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="nunit.core, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77" />
-    <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Test.cs" />
-    <Compile Include="JsonTests.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="JsonExtensions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\Mext\Mext.csproj">
-      <Project>{FEDF1C5A-22FA-479B-87E0-AC9D3FAF2D98}</Project>
-      <Name>Mext</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Mext.Json\Mext.Json.csproj">
-      <Project>{523B6D88-188F-46CC-ABBA-F816D41056F5}</Project>
-      <Name>Mext.Json</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>
